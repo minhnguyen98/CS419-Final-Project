@@ -30,4 +30,5 @@ cv2.imshow("Query", query)
 for (score, resultID) in results:
 	result = cv2.imread(args["result_path"] + "/" + resultID)
 	cv2.imshow("Result", result)
+	print(resultID)
 	cv2.waitKey(0)
